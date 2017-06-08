@@ -1,0 +1,21 @@
+yachts:
+  image: "card-paris.jpg"
+  icon: "seb.jpg"
+  name: Yacht and Crew
+  summary: Book your yacht and have fun!
+  tech: FullStack Ruby on Rails
+  link: "yachtandcrew.herokuapp.com"
+agora:
+  image: "card-london.jpeg"
+  icon: "romain.jpg"
+  name: Agora Learn
+  summary: Learn by sharing!
+  tech: FullStack Ruby on Rails
+  link: "agora-learn.eu"
+advblog:
+  image: "card-brussels.jpeg"
+  icon: "anne.jpg"
+  name: Apuntes de Viajes
+  summary: Personnalisation modèle blogger
+  tech: FrontEnd HTML CSS
+  link: "apuntesdeviajes.com"

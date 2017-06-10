@@ -5,7 +5,7 @@ title: Adalberto Gonzalez | FullStack Web Developer
   <div class="container">
     <div class="row">
       <div class="col-md-3 text-center">
-        <% image_tag "profile_pic.jpg" %>
+        <%= image_tag "profile_pic.jpg", class: "avatar-large" %>
       </div>
       <div class="col-md-9">
         <div class="resume text-center">
@@ -45,7 +45,8 @@ title: Adalberto Gonzalez | FullStack Web Developer
 </div>
 
 <div class="cards text-center padded">
-  <h2>Projets</h2>
+  <h2>REALISATIONS</h2>
+  <p>Mes derniers projets web</p>
   <div class="container">
   <div class="row">
     <div class="col-xs-12 col-sm-4">
@@ -86,7 +87,7 @@ title: Adalberto Gonzalez | FullStack Web Developer
   <div class="row">
     <div class="col-md-4 col-xs-12 col-md-offset-4">
       <div class="newsletter padded text-center">
-        <h2>Get news from us</h2>
+        <h2>Demarrez votre projet web</h2>
         <p>Leave us your mail and get news from us</p>
         <form action="#" class="form-inline">
           <input type="text" class="form-control" placeholder="bob@gmail.com">
@@ -95,25 +96,4 @@ title: Adalberto Gonzalez | FullStack Web Developer
       </div>
     </div>
   </div>
-</div>
-
-<div class="map">
-  <div id="map" style="width: 100%; height: 400px;"></div>
-  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
-  <script type="text/javascript">
-  var myLatlng = new google.maps.LatLng(48.8655909, 2.378983);
-  var myOptions = {
-    zoom: 16,
-    center: myLatlng,
-    scrollwheel: false,
-    mapTypeId: google.maps.MapTypeId.ROADMAP,
-    styles: [] // TODO: replace [] by array from https://snazzymaps.com/
-  };
-  var map = new google.maps.Map(document.getElementById('map'), myOptions);
-  var marker = new google.maps.Marker({
-    position: myLatlng,
-    map: map,
-    title: "You are here!"
-  });
-  </script>
 </div>

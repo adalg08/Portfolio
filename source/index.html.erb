@@ -10,7 +10,8 @@ title: Adalberto Gonzalez | FullStack Web Developer
       <div class="col-md-9">
         <div class="resume text-center">
           <h1>Développeur Web FullStack</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse saepe tenetur illum rerum voluptas quibusdam neque, magnam nostrum sit quidem fugiat amet quia itaque dolores, facilis repudiandae quam porro.</p>
+          <p>Salut, <strong>je suis Adalberto GONZALEZ, développeur web fullstack</strong>. Je suis spécialisé dans le développement d'applications web avec Ruby on Rails. J'ai aussi de connaissances en HTML, Bootstrap et JavaScript pour garantir des interfaces de qualité. <strong>Je suis disponible pour des nouveaux projets ou pour rejoindre votre équipe</strong></p>
+          <%= link_to "Télécharger mon CV", "#", class: "btn btn-primary"  %>
         </div>
       </div>
     </div>
@@ -21,31 +22,47 @@ title: Adalberto Gonzalez | FullStack Web Developer
   <div class="container">
     <div class="row">
       <div class="col-md-3">
-        <img src="images/globe.png" alt="">
-        <h3>Discover the world</h3>
-        <p>The earth is your new home.</p>
+        <ul class="list-inline">
+          <li><%= image_tag "ruby.png" %></li>
+          <li><%= image_tag "ror.png" %></li>
+          <li><%= image_tag "postgresql.png" %></li>
+        </ul>
+        <h3>Application web</h3>
+        <p>Besoin d'une app web adaptée à votre idée de business ? Avec la puissance de Ruby on Rails, on la rendra réel</p>
       </div>
       <div class="col-md-3">
-        <img src="images/dollar.png" alt="">
-        <h3>Pay online</h3>
-        <p>No cash issues anymore.</p>
+        <ul class="list-inline">
+          <li><%= image_tag "responsive.png" %></li>
+          <li><%= image_tag "bootstrap.png" %></li>
+          <li><%= image_tag "sass.png" %></li>
+        </ul>
+        <h3>Responsive design</h3>
+        <p>J'utilise les dernières technologies et frameworks pour que votre site soit adaptable à toutes les écrans</p>
       </div>
       <div class="col-md-3">
-        <img src="images/beer.png" alt="">
-        <h3>Meet people</h3>
-        <p>Discover new culture and lifestyle.</p>
+        <ul class="list-inline">
+          <li><%= image_tag "code.png" %></li>
+          <li><%= image_tag "git.png" %></li>
+          <li><%= image_tag "github.png" %></li>
+        </ul>
+        <h3>Méthodologie Agile</h3>
+        <p> Bonnes pratiques : Itérations courtes, Flexibilité et adaptation, Déploiement continu…</p>
       </div>
       <div class="col-md-3">
-        <img src="images/heart.png" alt="">
-        <h3>Share and love</h3>
-        <p>Join a community you will love.</p>
+        <ul class="list-inline">
+          <li><%= image_tag "heroku.png" %></li>
+          <li><%= image_tag "aws.png" %></li>
+          <li><%= image_tag "redis.png" %></li>
+        </ul>
+        <h3>Outils adaptés</h3>
+        <p>Heroku, AWS, Cloudinary, Mailers, Algolia... J'utilise le bon outil pour la bonne raison.</p>
       </div>
     </div>
   </div>
 </div>
 
 <div class="cards text-center padded">
-  <h2>REALISATIONS</h2>
+  <h2>Realisations</h2>
   <p>Mes derniers projets web</p>
   <div class="container">
   <div class="row">
@@ -87,12 +104,9 @@ title: Adalberto Gonzalez | FullStack Web Developer
   <div class="row">
     <div class="col-md-4 col-xs-12 col-md-offset-4">
       <div class="newsletter padded text-center">
-        <h2>Demarrez votre projet web</h2>
-        <p>Leave us your mail and get news from us</p>
-        <form action="#" class="form-inline">
-          <input type="text" class="form-control" placeholder="bob@gmail.com">
-          <input type="submit" value="Subscribe" class="btn btn-primary">
-        </form>
+        <h2>Entrer en contact</h2>
+        <p>N'hesitez pas à me contacter pour me parler de votre projet ou entreprise</p>
+        <%= link_to "Contactez-moi", "#", class: "btn btn-primary"  %>
       </div>
     </div>
   </div>

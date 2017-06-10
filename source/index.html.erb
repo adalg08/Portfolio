@@ -48,19 +48,36 @@ title: Adalberto Gonzalez | FullStack Web Developer
   <h2>Projets</h2>
   <div class="container">
   <div class="row">
-    <% data.projects.each do |project| %>
     <div class="col-xs-12 col-sm-4">
-      <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path project.image %>');">
-        <div class="card-category"><%= project.tech %></div>
+      <div class="card">
+        <div class="card-category">Fullstack</div>
         <div class="card-description">
-          <h2><%= project.name %></h2>
-          <p><%= project.summary %></p>
+          <h2>Yacht & Crew </h2>
+          <p>Book your yacht and have fun</p>
         </div>
-        <%= image_tag project.icon, class:"card-user avatar-small" %>
-        <%= link_to "", project.link, class: "card-link" %>
+        <%= link_to "", "https://yacht-and-crew.herokuapp.com/", class: "card-link", target: "blank" %>
       </div>
     </div>
-    <% end %>
+    <div class="col-xs-12 col-sm-4">
+      <div class="card">
+        <div class="card-category">Fullstack</div>
+        <div class="card-description">
+          <h2>Agora</h2>
+          <p>Learn by sharing</p>
+        </div>
+        <%= link_to "", "http://www.agora-learn.eu/", class: "card-link", target: "blank" %>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+      <div class="card">
+        <div class="card-category">Frontend</div>
+        <div class="card-description">
+          <h2>Apuntes de Viajes</h2>
+          <p>Viaja por el mundo</p>
+        </div>
+        <%= link_to "", "http://www.apuntesdeviajes.com/", class: "card-link", target: "blank" %>
+      </div>
+    </div>
   </div>
 </div>
 </div>

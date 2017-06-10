@@ -11,7 +11,7 @@ title: Adalberto Gonzalez | FullStack Web Developer
         <div class="resume text-center">
           <h1>Développeur Web FullStack</h1>
           <p>Salut, je suis Adalberto GONZALEZ, développeur web fullstack. Je suis spécialisé dans le développement d'applications web avec Ruby on Rails. J'ai aussi de connaissances en HTML, Bootstrap et JavaScript pour garantir des interfaces de qualité. <strong>Je suis disponible pour des nouveaux projets ou pour rejoindre votre équipe</strong></p>
-          <%= link_to "Télécharger mon CV", "#", class: "btn btn-primary"  %>
+          <%= link_to "Télécharger mon CV", "https://drive.google.com/file/d/0BzGr7DO2aIi3M3l0R01JcWtQaXM/view?usp=sharing", class: "btn btn-primary", target: "blank"  %>
         </div>
       </div>
     </div>
@@ -21,7 +21,7 @@ title: Adalberto Gonzalez | FullStack Web Developer
 <div class="features text-center padded">
   <div class="container">
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-md-3 col-sm-6 skill">
         <ul class="list-inline">
           <li><%= image_tag "ruby.png" %></li>
           <li><%= image_tag "ror.png" %></li>
@@ -30,7 +30,7 @@ title: Adalberto Gonzalez | FullStack Web Developer
         <h3>Dev web</h3>
         <p>Besoin d'une app web adaptée à votre idée de business ? Avec la puissance de Ruby on Rails, on la rendra réel</p>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-3 col-sm-6 skill">
         <ul class="list-inline">
           <li><%= image_tag "responsive.png" %></li>
           <li><%= image_tag "bootstrap.png" %></li>
@@ -39,7 +39,7 @@ title: Adalberto Gonzalez | FullStack Web Developer
         <h3>Responsive design</h3>
         <p>J'utilise les dernières technologies et frameworks pour que votre site soit adaptable à toutes les écrans</p>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-3 col-sm-6 skill">
         <ul class="list-inline">
           <li><%= image_tag "code.png" %></li>
           <li><%= image_tag "git.png" %></li>
@@ -48,7 +48,7 @@ title: Adalberto Gonzalez | FullStack Web Developer
         <h3>Méthodologie Agile</h3>
         <p> Bonnes pratiques : Itérations courtes, Flexibilité et adaptation, Déploiement continu…</p>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-3 col-sm-6 skill">
         <ul class="list-inline">
           <li><%= image_tag "heroku.png" %></li>
           <li><%= image_tag "aws.png" %></li>
@@ -66,8 +66,8 @@ title: Adalberto Gonzalez | FullStack Web Developer
   <p>Mes derniers projets web</p>
   <div class="container">
   <div class="row">
-    <div class="col-xs-12 col-sm-4">
-      <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path "yachts.jpg" %>');">
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <div class="card" style="background-size: cover;background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path "yachts.jpg" %>');">
         <div class="card-category">Fullstack</div>
         <div class="card-description">
           <h2>Yacht & Crew </h2>
@@ -76,8 +76,8 @@ title: Adalberto Gonzalez | FullStack Web Developer
         <%= link_to "", "https://yacht-and-crew.herokuapp.com/", class: "card-link", target: "blank" %>
       </div>
     </div>
-    <div class="col-xs-12 col-sm-4">
-      <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path "agora.jpg" %>');">
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <div class="card" style="background-size: cover;background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path "agora.jpg" %>');">
         <div class="card-category">Fullstack</div>
         <div class="card-description">
           <h2>Agora</h2>
@@ -86,8 +86,8 @@ title: Adalberto Gonzalez | FullStack Web Developer
         <%= link_to "", "http://www.agora-learn.eu/", class: "card-link", target: "blank" %>
       </div>
     </div>
-    <div class="col-xs-12 col-sm-4">
-      <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path "apuntes.jpg" %>');">
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <div class="card" style="background-size: cover;background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path "apuntes.jpg" %>');">
         <div class="card-category">Frontend</div>
         <div class="card-description">
           <h2>Apuntes de Viajes</h2>
@@ -106,7 +106,7 @@ title: Adalberto Gonzalez | FullStack Web Developer
       <div class="newsletter padded text-center">
         <h2>Entrer en contact</h2>
         <p>N'hesitez pas à me contacter pour me parler de votre projet ou entreprise</p>
-        <%= link_to "Contactez-moi", "#", class: "btn btn-primary"  %>
+        <%= link_to "Contactez-moi", "mailto:bonjour@adalbertogonzalez.com", class: "btn btn-primary", target: "blank"  %>
       </div>
     </div>
   </div>

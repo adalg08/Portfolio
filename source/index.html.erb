@@ -13,7 +13,6 @@ title: Adalberto Gonzalez | FullStack Web Developer
           <p>Salut, je suis Adalberto GONZALEZ, développeur web fullstack. Je suis spécialisé dans le développement d'applications web avec Ruby on Rails. <br> J'ai aussi des connaissances en HTML, Bootstrap et JavaScript. <br><strong>Je suis disponible pour des nouveaux projets ou pour rejoindre votre équipe</strong></p>
           <%= link_to "Télécharger mon CV", "https://drive.google.com/file/d/0BzGr7DO2aIi3M3l0R01JcWtQaXM/view?usp=sharing", class: "btn btn-primary", target: "blank"  %>
         </div>
-
     </div>
   </div>
 </div>
@@ -66,35 +65,19 @@ title: Adalberto Gonzalez | FullStack Web Developer
 
   <div class="container">
   <div class="row">
-    <div class="col-xs-12 col-sm-6 col-md-4">
-      <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path "yachts.jpg" %>'); background-size: cover;">
-        <div class="card-category">Fullstack</div>
-        <div class="card-description">
-          <h2>Yacht & Crew </h2>
-          <p>Book your yacht and have fun</p>
+    <% data.projects.each do |project| %>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path project.image %>'); background-size: cover;">
+          <div class="card-category"><%= project.tech %></div>
+          <div class="card-description">
+            <h2><%= project.name %></h2>
+            <p><%= project.summary  %></p>
+          </div>
+          <%= link_to "", project.link, class: "card-link", target: "blank" %>
         </div>
-        <%= link_to "", "https://yacht-and-crew.herokuapp.com/", class: "card-link", target: "blank" %>
-      </div>
+        </div>
+    <% end %>
     </div>
-    <div class="col-xs-12 col-sm-6 col-md-4">
-      <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path "agora.jpg" %>'); background-size: cover;">
-        <div class="card-category">Fullstack</div>
-        <div class="card-description">
-          <h2>Agora</h2>
-          <p>Learn by sharing</p>
-        </div>
-        <%= link_to "", "http://www.agora-learn.eu/", class: "card-link", target: "blank" %>
-      </div>
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-4">
-      <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path "apuntes.jpg" %>'); background-size: cover;">
-        <div class="card-category">Frontend</div>
-        <div class="card-description">
-          <h2>Apuntes de Viajes</h2>
-          <p>Viaja por el mundo</p>
-        </div>
-        <%= link_to "", "http://www.apuntesdeviajes.com/", class: "card-link", target: "blank" %>
-      </div>
     </div>
   </div>
 </div>

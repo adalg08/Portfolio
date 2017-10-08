@@ -9,53 +9,11 @@ title: Adalberto Gonzalez | FullStack Web Developer
 
 
         <div class="resume text-center">
-          <h1>Développeur Web FullStack</h1>
-          <p>Salut, je suis Adalberto GONZALEZ, développeur web fullstack. Je suis spécialisé dans le développement d'applications web avec Ruby on Rails. <br> J'ai aussi des connaissances en HTML, Bootstrap et JavaScript. <br><strong>Je suis disponible pour des nouveaux projets ou pour rejoindre votre équipe</strong></p>
-          <%= link_to "Télécharger mon CV", "https://drive.google.com/file/d/0BzGr7DO2aIi3M3l0R01JcWtQaXM/view?usp=sharing", class: "btn btn-primary", target: "blank"  %>
+          <div class="col-sm-6 col-sm-offset-3">
+            <h2>Adalberto GONZALEZ</h2>
+            <p>Développeur web fullstack. Je suis spécialisé dans le développement d'applications web avec Ruby on Rails et Javascript.
+          </div>
         </div>
-    </div>
-  </div>
-</div>
-
-<div class="features text-center padded">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3 col-sm-12 skill">
-        <ul class="list-inline">
-          <li><%= image_tag "ruby.svg" %></li>
-          <li><%= image_tag "ror.svg" %></li>
-          <li><%= image_tag "postgresql.svg" %></li>
-        </ul>
-        <h3>Développement web</h3>
-        <p>Besoin d'une app web adaptée à votre idée de business ? Avec la puissance de Ruby on Rails, nous la rendrons réelle</p>
-      </div>
-      <div class="col-md-3 col-sm-12 skill">
-        <ul class="list-inline">
-          <li><%= image_tag "responsive.svg" %></li>
-          <li><%= image_tag "bootstrap.svg" %></li>
-          <li><%= image_tag "sass.svg" %></li>
-        </ul>
-        <h3>Responsive <br> design</h3>
-        <p>J'utilise les dernières technologies et frameworks pour que votre site s'adapte à tous les écrans (pc, tablette, téléphone)</p>
-      </div>
-      <div class="col-md-3 col-sm-12 skill">
-        <ul class="list-inline">
-          <li><%= image_tag "code.svg" %></li>
-          <li><%= image_tag "git.svg" %></li>
-          <li><%= image_tag "github.svg" %></li>
-        </ul>
-        <h3>Approche <br> Agile</h3>
-        <p> Bonnes pratiques : Itérations courtes, Flexibilité et adaptation, Déploiement continu…</p>
-      </div>
-      <div class="col-md-3 col-sm-12 skill">
-        <ul class="list-inline">
-          <li><%= image_tag "heroku.svg" %></li>
-          <li><%= image_tag "aws.svg" %></li>
-          <li><%= image_tag "redis.svg" %></li>
-        </ul>
-        <h3>Outils <br> adaptés</h3>
-        <p>Heroku, AWS, Cloudinary, Mailers, Algolia... J'utilise le bon outil pour la bonne raison</p>
-      </div>
     </div>
   </div>
 </div>
@@ -67,7 +25,9 @@ title: Adalberto Gonzalez | FullStack Web Developer
   <div class="row">
     <% data.projects.each do |project| %>
       <div class="col-xs-12 col-sm-6 col-md-4">
-        <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path project.image %>'); background-size: cover;">
+        <div class="card">
+
+
           <div class="card-category"><%= project.tech %></div>
           <div class="card-description">
             <h2><%= project.name %></h2>

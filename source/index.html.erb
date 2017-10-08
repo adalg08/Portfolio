@@ -10,7 +10,7 @@ title: Adalberto Gonzalez | FullStack Web Developer
 
         <div class="resume text-center">
           <div class="col-sm-6 col-sm-offset-3">
-            <h2>Adalberto GONZALEZ</h2>
+            <h2>Adalberto GONZALEZ LUNA</h2>
             <p>Développeur web fullstack. Je suis spécialisé dans le développement d'applications web avec Ruby on Rails et Javascript.
           </div>
         </div>
@@ -25,9 +25,7 @@ title: Adalberto Gonzalez | FullStack Web Developer
   <div class="row">
     <% data.projects.each do |project| %>
       <div class="col-xs-12 col-sm-6 col-md-4">
-        <div class="card">
-
-
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= image_path project.image %>);">
           <div class="card-category"><%= project.tech %></div>
           <div class="card-description">
             <h2><%= project.name %></h2>

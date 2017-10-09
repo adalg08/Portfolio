@@ -11,7 +11,6 @@ title: Adalberto Gonzalez | FullStack Web Developer
         <div class="resume text-center">
           <div class="col-sm-6 col-sm-offset-3">
             <h2>Adalberto GONZALEZ LUNA</h2>
-            <p>Développeur web fullstack. Je suis spécialisé dans le développement d'applications web avec Ruby on Rails et Javascript.</p>
             <ul class="list-inline">
               <li>/now</li>
               <li>/realisations</li>
@@ -19,40 +18,40 @@ title: Adalberto Gonzalez | FullStack Web Developer
               <li>/linkedin</li>
               <li>/contact</li>
             </ul>
+            <div class="padded">
+              <h2>/now</h2>
+              <p>Développeur web fullstack. Je suis spécialisé dans le développement d'applications web avec Ruby on Rails et Javascript.</p>
+            </div>
           </div>
         </div>
     </div>
   </div>
 </div>
 
-<div class="cards text-center padded">
-  <h2>Realisations</h2>
+<div class="text-center padded">
+  <h2>/realisations</h2>
 
   <div class="container">
   <div class="row">
     <% data.projects.each do |project| %>
       <div class="col-xs-12 col-sm-6 col-md-4">
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= image_path project.image %>);">
-          <div class="card-category"><%= project.tech %></div>
-          <div class="card-description">
+        <div class="project-card">
+          <%= image_tag project.image %>
             <h2><%= project.name %></h2>
-            <p><%= project.summary  %></p>
-          </div>
+            <p><%= project.tech %></p>
           <%= link_to "", project.link, class: "card-link", target: "blank" %>
         </div>
-        </div>
+      </div>
     <% end %>
     </div>
     </div>
   </div>
-</div>
-</div>
 
 <div class="container">
   <div class="row">
     <div class="col-md-4 col-xs-12 col-md-offset-4">
       <div class="newsletter padded text-center">
-        <h2>Entrez en contact</h2>
+        <h2>/contact</h2>
         <p>N'hésitez pas à me contacter pour me parler de votre projet ou de votre entreprise</p>
         <%= link_to "Contactez-moi", "mailto:bonjour@adalbertogonzalez.com", class: "btn btn-primary", target: "blank"  %>
       </div>

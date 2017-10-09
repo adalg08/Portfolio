@@ -1,17 +1,17 @@
 - name: Louliecooks
   image: "louliecooks.jpeg"
   summary: Ton carnet de recettes perso
-  tech: Développement Fullstack
+  tech: Développement Fullstack Ruby on Rails
   link: "http://louliecooks.herokuapp.com/"
 - name: Yacht and Crew
   image: "yacht.jpeg"
   summary: Book your yacht and have fun!
-  tech: Développement Fullstack
+  tech: Développement Fullstack Ruby on Rails
   link: "http://yacht-and-crew.herokuapp.com/"
 - name: Agora Learn
   image: "agora.jpeg"
   summary: Learn by sharing!
-  tech: Développement Fullstack
+  tech: Développement Fullstack Ruby on Rails
   link: "http://www.agora-learn.eu/"
 - name: Apuntes de Viajes
   image: "apuntesdeviajes.jpeg"

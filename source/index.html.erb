@@ -12,10 +12,10 @@ title: Adalberto Gonzalez | FullStack Web Developer
           <div class="col-sm-6 col-sm-offset-3">
             <h2>Adalberto GONZALEZ LUNA</h2>
             <ul class="list-inline">
-              <li>/realisations</li>
-              <li>/github</li>
-              <li>/linkedin</li>
-              <li>/contact</li>
+              <%= link_to "/realisations", "#realisations" %>
+              <%= link_to "/github", "https://github.com/adalg08", target: :blank  %>
+              <%= link_to "/linkedin", "https://www.linkedin.com/in/adalbertogonzalez/", target: :blank %>
+              <%= link_to "/contact", "#contact"  %>
             </ul>
             <div class="padded">
               <p>Développeur web fullstack. Je suis spécialisé dans le développement d'applications web avec Ruby on Rails et Javascript.</p>
@@ -27,7 +27,7 @@ title: Adalberto Gonzalez | FullStack Web Developer
 </div>
 
 <div class="text-center padded">
-  <h2>/realisations</h2>
+  <a name="realisations"></a><h2>/realisations</h2>
 
   <div class="container">
   <div class="row">
@@ -49,7 +49,7 @@ title: Adalberto Gonzalez | FullStack Web Developer
   <div class="row">
     <div class="col-md-4 col-xs-12 col-md-offset-4">
       <div class="newsletter padded text-center">
-        <h2>/contact</h2>
+        <a name="contact"></a><h2>/contact</h2>
         <p>N'hésitez pas à me contacter pour me parler de votre projet ou de votre entreprise</p>
         <%= link_to "Contactez-moi", "mailto:bonjour@adalbertogonzalez.com", class: "btn btn-primary", target: "blank"  %>
       </div>

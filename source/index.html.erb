@@ -26,26 +26,27 @@ title: Adalberto Gonzalez | FullStack Web Developer
   </div>
 </div>
 
-<div class="text-center padded">
+<div class="realisations text-center padded">
+
   <a name="realisations"></a><h2>/realisations</h2>
 
   <div class="container">
-  <div class="row">
-    <% data.projects.each do |project| %>
-      <div class="col-xs-12 col-sm-6 col-md-4">
-        <div class="project-card">
-          <%= image_tag project.image %>
-            <h2><%= project.name %></h2>
-            <p><%= project.tech %></p>
-          <%= link_to "", project.link, class: "card-link", target: "blank" %>
+    <div class="row">
+      <% data.projects.each do |project| %>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="project-card">
+            <%= image_tag project.image %>
+              <h2><%= project.name %></h2>
+              <p><%= project.tech %></p>
+            <%= link_to "", project.link, class: "card-link", target: "blank" %>
+          </div>
         </div>
-      </div>
-    <% end %>
-    </div>
+      <% end %>
     </div>
   </div>
+</div>
 
-<div class="container">
+<div class="contact container">
   <div class="row">
     <div class="col-md-4 col-xs-12 col-md-offset-4">
       <div class="newsletter padded text-center">

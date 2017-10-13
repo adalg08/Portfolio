@@ -18,9 +18,16 @@
   </head>
 
   <body class="<%= page_classes %>">
-
     <%= yield %>
-    <%= partial "footer" %>
 
+    <script>
+      $(document).ready(function() {
+        $('#fullpage').fullpage({
+          anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
+          navigation: true,
+          navigationTooltips: ['firstSlide', 'secondSlide']
+        });
+      });
+    </script>
   </body>
 </html>

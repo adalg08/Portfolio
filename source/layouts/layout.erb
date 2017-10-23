@@ -18,16 +18,20 @@
   </head>
 
   <body class="<%= page_classes %>">
+
+    <div class="container navbar">
+      <div class="profile-pic">
+        <%= image_tag "profile_pic.jpg", class: "avatar" %>
+        <h2><%= link_to "Adalberto GONZALEZ LUNA", "index.html"  %></h2>
+      </div>
+      <ul class="list-inline">
+          <li><h4>Recherches</h4></li>
+          <li><h4><%= link_to "Projets Web", "web.html"  %></h4></li>
+          <li><h4>Contact</h4></li>
+      </ul>
+    </div>
+
     <%= yield %>
 
-    <script>
-      $(document).ready(function() {
-        $('#fullpage').fullpage({
-          anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
-          navigation: true,
-          navigationTooltips: ['firstSlide', 'secondSlide']
-        });
-      });
-    </script>
   </body>
 </html>

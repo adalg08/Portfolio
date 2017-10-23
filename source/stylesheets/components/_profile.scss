@@ -1,8 +1,14 @@
 .profile {
   color: #000;
 }
+.profile-pic {
+  display: flex;
+  align-items: center;
+}
 .resume {
   p {
     font-size: 18px;
+    font-weight: thin;
+    font-style: italic;
   }
 }

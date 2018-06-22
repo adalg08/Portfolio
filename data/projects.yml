@@ -12,7 +12,7 @@
   image: "agora.jpeg"
   summary: Learn by sharing!
   tech: Développement Fullstack Ruby on Rails
-  link: "http://www.agora-learn.eu/"
+  link: "https://agora-learn.herokuapp.com/"
 - name: Apuntes de Viajes
   image: "apuntesdeviajes.jpeg"
   summary: Viaja por el mundo

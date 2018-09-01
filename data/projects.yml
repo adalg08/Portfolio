@@ -1,13 +1,23 @@
-- name: Louliecooks
-  image: "louliecooks.jpeg"
-  summary: Ton carnet de recettes perso
-  tech: Développement Fullstack Ruby on Rails
-  link: "http://louliecooks.herokuapp.com/"
+- name: Qualimarq
+  image: "qualimarq.jpg"
+  summary: Site pour une PME de l'Industrie Laser
+  tech: Site vitrine développé avec Middleman (HTML, CSS, JavaScript, Ruby)
+  link: "https://qualimarq.fr/"
+- name: LokitaJus
+  image: "lokitajus.jpg"
+  summary: Site pour une PME Restaurant
+  tech: Site vitrine développé avec Middleman (HTML, CSS, JavaScript, Ruby)
+  link: "http://lokitajus.fr/"
 - name: Yacht and Crew
   image: "yacht.jpeg"
   summary: Book your yacht and have fun!
   tech: Développement Fullstack Ruby on Rails
   link: "http://yacht-and-crew.herokuapp.com/"
+- name: Louliecooks
+  image: "louliecooks.jpeg"
+  summary: Ton carnet de recettes perso
+  tech: Développement Fullstack Ruby on Rails
+  link: "http://louliecooks.herokuapp.com/"
 - name: Agora Learn
   image: "agora.jpeg"
   summary: Learn by sharing!

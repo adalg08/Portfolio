@@ -1,4 +1,2 @@
-## Start a new project.
-
-1. Fork this repo
-1. Rename-it then clone it on your computer
+# Projects Mockups
+https://smartmockups.com/mockup/digital_bundle_39

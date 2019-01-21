@@ -6,5 +6,5 @@ published: true
 ---
 Hola mundo
 
-![]({{site.baseurl}}/source/content/CSprofil.jpg)![CSprofil.jpg]({{site.baseurl}}/source/content/CSprofil.jpg)
+![]({{site.baseurl}}/source/content/media/CSprofil.jpg)![CSprofil.jpg]({{site.baseurl}}/source/content/media/CSprofil.jpg)
 

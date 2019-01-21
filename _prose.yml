@@ -1,3 +1,6 @@
 prose:
-  rooturl: 'source'
-  media: '/source/content/media'
+  rooturl: 'source/content'
+  siteurl: 'https://adalbertogonzalez.com'
+  baseurl: '/'
+  media: 'content/media'
+	

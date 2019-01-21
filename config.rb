@@ -10,6 +10,11 @@
 # Auto-prefixing of CSS code with vendor prefix
 activate :autoprefixer
 
+activate :blog do |blog|
+  blog.permalink = 'blog/{title}.html'
+  blog.sources = 'content/{title}.html'
+end
+
 ###
 # Page options, layouts, aliases and proxies
 ###
